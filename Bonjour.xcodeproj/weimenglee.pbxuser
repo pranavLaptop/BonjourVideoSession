@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* BonjourAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 640}}";
+			sepNavSelRange = "{266, 20}";
+			sepNavVisRange = "{0, 573}";
+			sepNavWindowFrame = "{{107, 171}, {1252, 768}}";
+		};
+	};
+	1D3623250D0F684500981E51 /* BonjourAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1443}}";
+			sepNavSelRange = "{1069, 0}";
+			sepNavVisRange = "{1220, 2091}";
+			sepNavWindowFrame = "{{38, 234}, {1252, 768}}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Bonjour */ = {
+		activeExec = 0;
+		executables = (
+			B7A0603711DC2F3700623217 /* Bonjour */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* BonjourViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1193, 702}}";
+			sepNavSelRange = "{196, 0}";
+			sepNavVisRange = "{0, 1302}";
+			sepNavWindowFrame = "{{404, 55}, {1252, 768}}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {929, 3211}}";
+			sepNavSelRange = "{4823, 0}";
+			sepNavVisRange = "{6261, 1599}";
+			sepNavWindowFrame = "{{369, 78}, {1252, 768}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = B7A0603711DC2F3700623217 /* Bonjour */;
+		activeSDKPreference = iphonesimulator4.0;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Bonjour */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Bonjour */,
+		);
+		breakpoints = (
+			B7A0605E11DC398B00623217 /* BonjourAppDelegate.m:46 */,
+			B7A0606A11DC3A1900623217 /* BonjourAppDelegate.m:76 */,
+			B7A0607011DC3AB500623217 /* BonjourAppDelegate.m:66 */,
+			B7A060B311DC42D400623217 /* BonjourAppDelegate.m:21 */,
+			B7A060BB11DC42F400623217 /* BonjourAppDelegate.m:58 */,
+			B7A060BD11DC42F800623217 /* BonjourAppDelegate.m:89 */,
+		);
+		codeSenseManager = B7A0604111DC2F4100623217 /* Code sense */;
+		executables = (
+			B7A0603711DC2F3700623217 /* Bonjour */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					605,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					461,
+					60,
+					20,
+					48.16259765625,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 304950514;
+			PBXWorkspaceStateSaveDate = 304950514;
+		};
+		perUserProjectItems = {
+			B702A93912026D740072E22D /* PBXTextBookmark */ = B702A93912026D740072E22D /* PBXTextBookmark */;
+			B702A93A12026D740072E22D /* PBXTextBookmark */ = B702A93A12026D740072E22D /* PBXTextBookmark */;
+			B702A93B12026D740072E22D /* PBXTextBookmark */ = B702A93B12026D740072E22D /* PBXTextBookmark */;
+			B702A95112026D910072E22D /* PBXTextBookmark */ = B702A95112026D910072E22D /* PBXTextBookmark */;
+			B723963A11DC752800DA36CE /* PBXTextBookmark */ = B723963A11DC752800DA36CE /* PBXTextBookmark */;
+			B7FD2AA9122D2D3C00735B20 /* PBXTextBookmark */ = B7FD2AA9122D2D3C00735B20 /* PBXTextBookmark */;
+		};
+		sourceControlManager = B7A0604011DC2F4100623217 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	B702A93912026D740072E22D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B72395B211DC6BD300DA36CE /* AsyncSocket.m */;
+		name = "AsyncSocket.m: 951";
+		rLen = 0;
+		rLoc = 29194;
+		rType = 0;
+		vrLen = 2226;
+		vrLoc = 20923;
+	};
+	B702A93A12026D740072E22D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* BonjourAppDelegate.h */;
+		name = "BonjourAppDelegate.h: 12";
+		rLen = 0;
+		rLoc = 200;
+		rType = 0;
+		vrLen = 573;
+		vrLoc = 0;
+	};
+	B702A93B12026D740072E22D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* BonjourViewController.h */;
+		name = "BonjourViewController.h: 18";
+		rLen = 0;
+		rLoc = 414;
+		rType = 0;
+		vrLen = 1309;
+		vrLoc = 0;
+	};
+	B702A95112026D910072E22D /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */;
+		name = "BonjourViewController.m: 29";
+		rLen = 0;
+		rLoc = 595;
+		rType = 0;
+		vrLen = 1599;
+		vrLoc = 6261;
+	};
+	B72395B211DC6BD300DA36CE /* AsyncSocket.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {941, 38051}}";
+			sepNavSelRange = "{33505, 0}";
+			sepNavVisRange = "{33207, 506}";
+			sepNavWindowFrame = "{{84, 192}, {1252, 768}}";
+		};
+	};
+	B723963A11DC752800DA36CE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		name = "BonjourAppDelegate.m: 44";
+		rLen = 0;
+		rLoc = 1069;
+		rType = 0;
+		vrLen = 2091;
+		vrLoc = 1220;
+	};
+	B7A0603711DC2F3700623217 /* Bonjour */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Bonjour;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	B7A0604011DC2F4100623217 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	B7A0604111DC2F4100623217 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	B7A0605E11DC398B00623217 /* BonjourAppDelegate.m:46 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-applicationWillTerminate:";
+		hitCount = 0;
+		ignoreCount = 0;
+		lineNumber = 46;
+		location = Bonjour;
+		modificationTime = 299655138.809817;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7A0606A11DC3A1900623217 /* BonjourAppDelegate.m:76 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-applicationWillEnterForeground:";
+		hitCount = 2;
+		ignoreCount = 0;
+		lineNumber = 76;
+		location = Bonjour;
+		modificationTime = 299655283.639215;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7A0607011DC3AB500623217 /* BonjourAppDelegate.m:66 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-applicationDidEnterBackground:";
+		hitCount = 2;
+		ignoreCount = 0;
+		lineNumber = 66;
+		location = Bonjour;
+		modificationTime = 299655272.941975;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7A060B311DC42D400623217 /* BonjourAppDelegate.m:21 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-application:didFinishLaunchingWithOptions:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 21;
+		location = Bonjour;
+		modificationTime = 299655140.836074;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7A060BB11DC42F400623217 /* BonjourAppDelegate.m:58 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-applicationWillResignActive:";
+		hitCount = 2;
+		ignoreCount = 0;
+		lineNumber = 58;
+		location = Bonjour;
+		modificationTime = 299655271.2647851;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7A060BD11DC42F800623217 /* BonjourAppDelegate.m:89 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */;
+		functionName = "-applicationDidBecomeActive:";
+		hitCount = 3;
+		ignoreCount = 0;
+		lineNumber = 89;
+		location = Bonjour;
+		modificationTime = 299655286.581191;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B7FD2AA9122D2D3C00735B20 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */;
+		name = "BonjourViewController.m: 144";
+		rLen = 0;
+		rLoc = 4823;
+		rType = 0;
+		vrLen = 1599;
+		vrLoc = 6261;
+	};
+}

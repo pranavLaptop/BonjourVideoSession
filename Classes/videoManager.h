@@ -1,0 +1,41 @@
+//
+//  videoManager.h
+//  Bonjour
+//
+//  Created by PRANAV KAPOOR on 12/4/11.
+//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreGraphics/CoreGraphics.h>
+#import <CoreVideo/CoreVideo.h>
+#import <CoreMedia/CoreMedia.h>
+#import "BonjourViewController.h"
+
+@interface videoManager :NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
+	AVCaptureSession *_captureSession;
+	UIImageView *_imageView;
+	CALayer *_customLayer;
+	AVCaptureVideoPreviewLayer *_prevLayer;
+    UIView  *captureOverlayView;
+    UIImageView *overlayImageView;
+}
+
+////Camera Session Init
+@property (nonatomic, retain) AVCaptureSession *captureSession;
+
+////OnScreen ViewPort for showing captured Video
+@property (nonatomic, retain) UIImageView *imageView;
+
+////OnScreen Layer to show captured Video
+@property (nonatomic, retain) CALayer *customLayer;
+
+///Find out more
+@property (nonatomic, retain) AVCaptureVideoPreviewLayer *prevLayer;
+
+- (void)initCapture;
+- (void)endCapture;
+- (void)beginCapture;
+- (void)initOverlayView;
+@end

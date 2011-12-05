@@ -1,0 +1,712 @@
+TBonjour
+v7
+r0
+t299659875.624249
+cCheck dependencies
+cCpResource build/Debug-iphoneos/Bonjour.app/ResourceRules.plist "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist"
+cProcessInfoPlistFile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Info.plist" Bonjour-Info.plist
+cCompileXIB "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib"
+cCompileXIB "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib"
+cProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/main.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourAppDelegate.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourViewController.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/AsyncSocket.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour" normal armv6
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/main.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourAppDelegate.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourViewController.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/AsyncSocket.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour" normal armv7
+cCreateUniversalBinary "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour" normal "armv6 armv7"
+cGenerateDSYMFile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app.dSYM" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour"
+cProcessProductPackaging "/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision"
+cTouch "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"
+cProcessProductPackaging "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent"
+cCodeSign "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk
+c000000004C105FCA0000000000000110
+t1276141514
+s272
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+c000000004C05620900000000000001A7
+t1275421193
+s423
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+c000000004B9F103D00000000000001E5
+t1268715581
+s485
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BA03AC100000000003B4B70
+t1268792001
+s3885936
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004B9F26D2000000000036A650
+t1268721362
+s3581520
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004B9F26B90000000000001355
+t1268721337
+s4949
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004B9F318D000000000000098F
+t1268724109
+s2447
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004B9F32090000000002703230
+t1268724233
+s40907312
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/arpa/inet.h
+c000000004B9F13220000000000001533
+t1268716322
+s5427
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/usr/include/netinet/in.h
+c000000004B9F1BC8000000000000539D
+t1268718536
+s21405
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk
+c000000004C105FCD0000000000000110
+t1276141517
+s272
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+c000000004BF4B7F900000000000001A7
+t1274329081
+s423
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+c000000004BF4B7F900000000000001E5
+t1274329081
+s485
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
+c000000004BFE078B00000000002CE430
+t1274939275
+s2942000
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetwork.h
+c000000004BFE072E00000000000004CF
+t1274939182
+s1231
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004BFE06FA000000000034A850
+t1274939130
+s3450960
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004BFE07D200000000003E1EB0
+t1274939346
+s4071088
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004BFE07B10000000000001466
+t1274939313
+s5222
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004C04711400000000000009CD
+t1275359508
+s2509
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004C0471FC0000000002D563E0
+t1275359740
+s47539168
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/arpa/inet.h
+c000000004BF4BCE80000000000001533
+t1274330344
+s5427
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/netdb.h
+c000000004BF4BD13000000000000307F
+t1274330387
+s12415
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/netinet/in.h
+c000000004BFDFE070000000000005462
+t1274936839
+s21602
+
+N/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/usr/include/sys/socket.h
+c000000004BFDFE1A00000000000059D6
+t1274936858
+s22998
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib
+c000000004C2C3AC70000000000008142
+t1277967047
+s33090
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch
+c000000004C2BF7B700000000000000B7
+t1277949879
+s183
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.h
+c0000000049E8E5A600000000000042A9
+t1239999910
+s17065
+i<Foundation/Foundation.h>
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m
+c000000004B0D4DC4000000000001565E
+t1259163076
+s87646
+i"AsyncSocket.h"
+i<sys/socket.h>
+i<netinet/in.h>
+i<arpa/inet.h>
+i<netdb.h>
+i<CFNetwork/CFNetwork.h>
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.h
+c000000004C2C089D0000000000000241
+t1277954205
+s577
+i<UIKit/UIKit.h>
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m
+c000000004C2C26860000000000000CFB
+t1277961862
+s3323
+i"BonjourAppDelegate.h"
+i"BonjourViewController.h"
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.h
+c000000004C2C39B100000000000004EC
+t1277966769
+s1260
+i<UIKit/UIKit.h>
+i"AsyncSocket.h"
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m
+c000000004C2C39C60000000000001F13
+t1277966790
+s7955
+i"BonjourViewController.h"
+i<netinet/in.h>
+i<arpa/inet.h>
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib
+c000000004C2BF7B70000000000004E29
+t1277949879
+s20009
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent
+t1277966367
+s420
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/AsyncSocket.o
+t1277966365
+s162688
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour
+t1277966854
+s117876
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour.LinkFileList
+c000000004C2C381B0000000000000252
+t1277966363
+s594
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourAppDelegate.o
+t1277966854
+s54052
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourViewController.o
+t1277966854
+s78036
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/main.o
+t1277966364
+s6544
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/AsyncSocket.o
+t1277966366
+s155960
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour
+t1277966854
+s113228
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour.LinkFileList
+c000000004C2C381B0000000000000252
+t1277966363
+s594
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourAppDelegate.o
+t1277966854
+s53900
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourViewController.o
+t1277966854
+s77224
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/main.o
+t1277966366
+s6528
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv6/BonjourAppDelegate.plist
+t1277963062
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv6/BonjourViewController.plist
+t1277963098
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv6/main.plist
+t1277963062
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv7/BonjourAppDelegate.plist
+t1277963062
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv7/BonjourViewController.plist
+t1277963098
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv7/main.plist
+t1277963062
+s276
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app
+t1277967053
+s374
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app.dSYM
+t1277966854
+s102
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour
+t1277966854
+s250656
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/BonjourViewController.nib
+t1277967052
+s3548
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Info.plist
+t1277966363
+s726
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/MainWindow.nib
+t1277966364
+s1123
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/PkgInfo
+t1277966363
+s8
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/ResourceRules.plist
+t1277966363
+s485
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision
+t1277952354
+s7290
+
+N/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m
+c000000004C2BF7B70000000000000168
+t1277949879
+s360
+i<UIKit/UIKit.h>
+
+N/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision
+c000000004C11B2D70000000000001C7A
+t1276228311
+s7290
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch.gch
+t1277952353
+s10298928
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch.gch
+t1277952352
+s9831984
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch.pth
+t1277963061
+s2616808
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-ewcrgmgvgmpqmwgshulglayovkky/Bonjour_Prefix.pch.pth
+t1277963061
+s2616640
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eyadeflpcmcputbleydrbkagamro/Bonjour_Prefix.pch.gch
+t1277963699
+s8958612
+
+N/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-gryhiewpyzoubieyrjkjqbjjuakh/Bonjour_Prefix.pch.gch
+t1277963700
+s9425556
+
+NBonjour-Info.plist
+c000000004C2BF7B7000000000000038D
+t1277949879
+s909
+
+CAnalyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m"
+s299655862.106126
+e299655862.151001
+r1
+xAnalyze
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m
+lSLF07#2@98"Analyze /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m299655862#299655862#0(0"0(0#0#90"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m8610876000#2128"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/clang" -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch --analyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv7/BonjourAppDelegate.plist"0#
+
+CAnalyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m"
+s299655898.314781
+e299655898.373068
+r1
+xAnalyze
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m
+lSLF07#2@101"Analyze /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m299655898#299655898#0(0"0(0#0#93"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m8608221920#2134"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/clang" -x objective-c -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-ewcrgmgvgmpqmwgshulglayovkky/Bonjour_Prefix.pch --analyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv6/BonjourViewController.plist"0#
+
+CAnalyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m"
+s299655862.055871
+e299655862.106036
+r1
+xAnalyze
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m
+lSLF07#2@76"Analyze /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m299655862#299655862#0(0"0(0#0#68"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m8603936672#2092"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/clang" -x objective-c -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch --analyze "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/StaticAnalyzer/normal/armv7/main.plist"0#
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies299659875#299659875#0(0"0(0#1#0"8621474944#0"0#
+
+CCodeSign "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"
+s299659875.426473
+e299659875.624215
+r1
+xCodeSign
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app: replacing existing signature
+lSLF07#2@41"CodeSign build/Debug-iphoneos/Bonjour.app299659875#299659875#0(125"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app: replacing existing signature0(0#0#94"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app8610696992#795"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate"    /usr/bin/codesign -f -s "iPhone Developer: Wei-Meng Lee (398N22LL9K)" "--resource-rules=/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/ResourceRules.plist" --entitlements "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/AsyncSocket.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299659164.723800
+e299659165.474014
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/AsyncSocket.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToHost:onPort:withTimeout:error:]':
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:951: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:957: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToAddress:withTimeout:error:]':
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1004: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1010: warning: format not a string literal and no format arguments
+lSLF07#2@91"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m299659164#299659165#0(908"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToHost:onPort:withTimeout:error:]':/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:951: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:957: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToAddress:withTimeout:error:]':/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1004: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1010: warning: format not a string literal and no format arguments4(22@51"Format not a string literal and no format arguments299659164#155#150#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#951#0#951#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659164#305#150#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#957#0#957#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659164#606#151#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#1004#0#1004#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659164#757#151#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#1010#0#1010#0#51"format not a string literal and no format arguments0(0#0#83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m8616459200#2085"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/AsyncSocket.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourAppDelegate.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299659653.996830
+e299659654.145471
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourAppDelegate.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m299659653#299659654#0(0"0(0#0#90"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m8620919552#2099"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourAppDelegate.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourViewController.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299659653.997982
+e299659654.206369
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourViewController.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m299659653#299659654#0(0"0(0#0#93"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m8610696992#2105"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/BonjourViewController.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/main.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299659164.565134
+e299659164.666028
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/main.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m299659164#299659164#0(0"0(0#0#68"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m8608393984#2063"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/main.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/AsyncSocket.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299659166.505190
+e299659166.988644
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/AsyncSocket.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToHost:onPort:withTimeout:error:]':
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:951: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:957: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToAddress:withTimeout:error:]':
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1004: warning: format not a string literal and no format arguments
+o/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1010: warning: format not a string literal and no format arguments
+lSLF07#2@91"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m299659166#299659166#0(908"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToHost:onPort:withTimeout:error:]':/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:951: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:957: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m: In function '-[AsyncSocket connectToAddress:withTimeout:error:]':/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1004: warning: format not a string literal and no format arguments/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m:1010: warning: format not a string literal and no format arguments4(22@51"Format not a string literal and no format arguments299659166#155#150#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#951#0#951#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659166#305#150#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#957#0#957#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659166#606#151#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#1004#0#1004#0#51"format not a string literal and no format arguments0(22@51"Format not a string literal and no format arguments299659166#757#151#0(6@83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m280855876#1010#0#1010#0#51"format not a string literal and no format arguments0(0#0#83"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m8614559168#2085"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/AsyncSocket.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/AsyncSocket.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourAppDelegate.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299659654.145818
+e299659654.313575
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourAppDelegate.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@98"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m299659654#299659654#0(0"0(0#0#90"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m8611456928#2099"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourAppDelegate.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourAppDelegate.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourViewController.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299659654.313688
+e299659654.504882
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourViewController.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@101"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m299659654#299659654#0(0"0(0#0#93"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m8622949952#2105"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Classes/BonjourViewController.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/BonjourViewController.o"0#
+
+CCompileC build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/main.o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299659165.088756
+e299659166.466063
+r1
+xCompileC
+xbuild/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/main.o
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@76"Compile /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m299659165#299659166#0(0"0(0#0#68"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m8615960800#2063"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -include /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/main.m" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/main.o"0#
+
+CCompileXIB "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib"
+s299659850.966211
+e299659852.607941
+r1
+xCompileXIB
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib
+lSLF07#2@36"CompileXIB BonjourViewController.xib299659850#299659852#0(0"0(0#0#87"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib8616476448#703"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/BonjourViewController.nib" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/BonjourViewController.xib" --sdk "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCompileXIB "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib"
+s299659163.502826
+e299659164.509719
+r1
+xCompileXIB
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib299659163#299659164#0(0"0(0#0#76"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib8614315968#681"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/ibtool" --errors --warnings --notices --output-format human-readable-text --compile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/MainWindow.nib" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/MainWindow.xib" --sdk "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk"0#
+
+CCpResource build/Debug-iphoneos/Bonjour.app/ResourceRules.plist "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist"
+s299656496.996177
+e299656497.044376
+r1
+xCpResource
+xbuild/Debug-iphoneos/Bonjour.app/ResourceRules.plist
+x/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist
+lSLF07#2@109"Copy /Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist299656496#299656497#0(0"0(0#0#104"/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist8608859552#594"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/ResourceRules.plist" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"0#
+
+CCpResource build/Debug-iphoneos/Bonjour.app/ResourceRules.plist "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist"
+s299659163.388968
+e299659163.502727
+r1
+xCpResource
+xbuild/Debug-iphoneos/Bonjour.app/ResourceRules.plist
+x/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist
+lSLF07#2@109"Copy /Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist299659163#299659163#0(0"0(0#0#104"/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist8604054336#594"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp" -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/ResourceRules.plist" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"0#
+
+CCreateUniversalBinary "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour" normal "armv6 armv7"
+s299659654.543673
+e299659654.571493
+r1
+xCreateUniversalBinary
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour
+xnormal
+xarmv6 armv7
+lSLF07#2@83"CreateUniversalBinary build/Debug-iphoneos/Bonjour.app/Bonjour normal "armv6 armv7"299659654#299659654#0(0"0(0#0#73"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/armv6 armv78612594272#648"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour" -output "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour"0#
+
+CGenerateDSYMFile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app.dSYM" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour"
+s299659654.571577
+e299659654.638193
+r1
+xGenerateDSYMFile
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app.dSYM
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour
+lSLF07#2@95"GenerateDSYMFile build/Debug-iphoneos/Bonjour.app.dSYM build/Debug-iphoneos/Bonjour.app/Bonjour299659654#299659654#0(0"0(0#0#102"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour8621492096#484"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/dsymutil" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Bonjour" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app.dSYM"0#
+
+CLd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour" normal armv6
+s299659654.206468
+e299659654.482250
+r1
+xLd
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour
+xnormal
+xarmv6
+lSLF07#2@144"Link /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour299659654#299659654#0(0"0(0#0#0"8609232256#1069"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv6 -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" "-L/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" -filelist "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour.LinkFileList" -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv6/Bonjour"0#
+
+CLd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour" normal armv7
+s299659654.504982
+e299659654.543408
+r1
+xLd
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour
+xnormal
+xarmv7
+lSLF07#2@144"Link /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour299659654#299659654#0(0"0(0#0#0"8618752576#1069"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -arch armv7 -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" "-L/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" -filelist "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour.LinkFileList" -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -framework CFNetwork -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Objects-normal/armv7/Bonjour"0#
+
+CProcessInfoPlistFile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Info.plist" Bonjour-Info.plist
+s299659163.389730
+e299659163.462131
+r1
+xProcessInfoPlistFile
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Info.plist
+xBonjour-Info.plist
+lSLF07#2@26"Process Bonjour-Info.plist299659163#299659163#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour-Info.plist8611186752#692"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility Bonjour-Info.plist -genpkginfo "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/PkgInfo" -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/ResourceRules.plist" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/Info.plist"0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299645150.479948
+e299645153.670323
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch.gch
+xBonjour_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299645150#299645153#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8624265600#1936"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-aacavqkhtjmibmcwitivfevwiezg/Bonjour_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299645150.471474
+e299645153.495072
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch.gch
+xBonjour_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299645150#299645153#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8624512384#1936"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-cwconybofjnzdjakhzweoppudubm/Bonjour_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch.pth Bonjour_Prefix.pch normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s299655861.485776
+e299655861.952855
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch.pth
+xBonjour_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299655861#299655861#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8606136064#1947"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/clang" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eppbsiqwejacczdcettgjhohtsfq/Bonjour_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-ewcrgmgvgmpqmwgshulglayovkky/Bonjour_Prefix.pch.pth Bonjour_Prefix.pch normal armv6 objective-c com.apple.compilers.llvm.clang.1_0.analyzer
+s299655861.484766
+e299655861.895257
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-ewcrgmgvgmpqmwgshulglayovkky/Bonjour_Prefix.pch.pth
+xBonjour_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.analyzer
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299655861#299655861#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8606313408#1947"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/usr/bin/clang" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -fdiagnostics-print-source-range-info -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk" -fasm-blocks -gdwarf-2 -fvisibility=hidden -mthumb -miphoneos-version-min=4.0 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-ewcrgmgvgmpqmwgshulglayovkky/Bonjour_Prefix.pch.pth0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eyadeflpcmcputbleydrbkagamro/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s299656498.621009
+e299656500.023444
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eyadeflpcmcputbleydrbkagamro/Bonjour_Prefix.pch.gch
+xBonjour_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299656498#299656500#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8608371936#1936"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv6" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-eyadeflpcmcputbleydrbkagamro/Bonjour_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-gryhiewpyzoubieyrjkjqbjjuakh/Bonjour_Prefix.pch.gch Bonjour_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s299656498.621911
+e299656500.094360
+r1
+xProcessPCH
+x/var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-gryhiewpyzoubieyrjkjqbjjuakh/Bonjour_Prefix.pch.gch
+xBonjour_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@29"Precompile Bonjour_Prefix.pch299656498#299656500#0(0"0(0#0#80"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch8599051552#1936"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv LANG en_US.US-ASCII    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2" -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk" -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.2 -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-generated-files.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-own-target-headers.hmap" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-all-target-headers.hmap" -iquote "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour-project-headers.hmap" "-F/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/include" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources/armv7" "-I/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/DerivedSources" -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/Bonjour_Prefix.pch" -o /var/folders/In/In3362XSFvW5SyIVpq2WsU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Bonjour_Prefix-gryhiewpyzoubieyrjkjqbjjuakh/Bonjour_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent"
+s299656500.381520
+e299656500.395483
+r1
+xProcessProductPackaging
+x/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent
+lSLF07#2@192"ProcessProductPackaging "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist" build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent299656500#299656500#0(0"0(0#0#124"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent8611625536#529"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.2.sdk/Entitlements.plist" -entitlements -format xml -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent"0#
+
+CProcessProductPackaging "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent"
+s299659167.155679
+e299659167.178591
+r1
+xProcessProductPackaging
+x/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent
+lSLF07#2@192"ProcessProductPackaging "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist" build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent299659167#299659167#0(0"0(0#0#124"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent8612318880#529"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.0.sdk/Entitlements.plist" -entitlements -format xml -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Bonjour.build/Debug-iphoneos/Bonjour.build/Bonjour.xcent"0#
+
+CProcessProductPackaging "/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision" "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision"
+s299645154.731450
+e299645154.773443
+r1
+xProcessProductPackaging
+x/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision
+lSLF07#2@197"ProcessProductPackaging "/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision" build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision299645154#299645154#0(0"0(0#0#119"/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision8623918272#508"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/weimenglee/Library/MobileDevice/Provisioning Profiles/F45C4824-55DA-4442-8F69-130FE3B62DB1.mobileprovision" -o "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app/embedded.mobileprovision"0#
+
+CTouch "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"
+s299659852.609692
+e299659852.634379
+r1
+xTouch
+x/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app
+lSLF07#2@100"Touch /Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app299659852#299659852#0(0"0(0#0#0"8620079616#344"    cd "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour"    setenv PATH "/Developer - OD 4 GM Seed/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer - OD 4 GM Seed/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c "/Users/weimenglee/Desktop/iPhone OS 4.0 Book/Projects/Bonjour/build/Debug-iphoneos/Bonjour.app"0#
+
