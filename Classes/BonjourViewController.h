@@ -17,6 +17,8 @@
 	//—-outlets—-
     IBOutlet UITableView *tbView;
     IBOutlet UITextView *debug;
+    IBOutlet UIButton* btnSynchronize;
+    IBOutlet UIButton* btnRecord;  
 	
 	//—-use for browsing services—-	
     NSNetServiceBrowser *browser;	
@@ -27,6 +29,10 @@
     AsyncSocket *listenSocket;
 	AsyncSocket *clientSocket;
 	NSMutableArray *connectedSockets;		
+  float synchSignal;
+  float sendTime;
+  float receivedTime;
+  int clockTime;
 }
 
 -(void) resolveIPAddress:(NSNetService *)service;
@@ -35,6 +41,8 @@
 //—-expose the outlets as properties—-
 @property (nonatomic, retain) UITableView *tbView;
 @property (nonatomic, retain) UITextView *debug;
+@property (nonatomic, retain) UIButton* btnSynchronize;
+@property (nonatomic, retain) UIButton* btnRecord;
 
 @property (nonatomic, retain) UITextField *message;
 
@@ -47,6 +55,7 @@
 -(IBAction) btnConnect:(id)sender;
 -(IBAction) btnSend:(id)sender;
 -(IBAction) doneEditing:(id) sender;
+-(IBAction) btnSynchronize:(id)sender;
 +(BonjourViewController *) getRootViewController;
 
 @end

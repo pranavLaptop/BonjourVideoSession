@@ -12,14 +12,18 @@
 #import <CoreVideo/CoreVideo.h>
 #import <CoreMedia/CoreMedia.h>
 #import "BonjourViewController.h"
+#import "VideoManager.h"
 
-@interface videoManager :NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
+@interface VideoManager :NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
 	AVCaptureSession *_captureSession;
+    UIView *view;
 	UIImageView *_imageView;
 	CALayer *_customLayer;
 	AVCaptureVideoPreviewLayer *_prevLayer;
     UIView  *captureOverlayView;
     UIImageView *overlayImageView;
+    
+    UIViewController *viewController;
 }
 
 ////Camera Session Init
@@ -37,5 +41,5 @@
 - (void)initCapture;
 - (void)endCapture;
 - (void)beginCapture;
-- (void)initOverlayView;
+-(void) initOverlayView:(CGSize)size:(UIView *)_view;
 @end

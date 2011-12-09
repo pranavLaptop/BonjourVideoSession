@@ -20,6 +20,8 @@
 
 @synthesize clientSocket;
 @synthesize serviceIP;
+@synthesize btnSynchronize;
+@synthesize btnRecord;
 
 
 BonjourViewController *rootViewController=NULL;
@@ -61,8 +63,15 @@ BonjourViewController *rootViewController=NULL;
 	[socket release];	
 }
 
+-(IBAction)btnSynchronize:(id)sender
+{
+  NSString* synchString = [NSString stringWithFormat:@"%f\r\n",[[NSDate date] timeIntervalSince1970]];
+  NSData* data = [synchString dataUsingEncoding:NSUTF8StringEncoding];
+  [self.clientSocket writeData:data withTimeout:-1 tag:1];
+}
+
 -(IBAction) btnSend:(id)sender {
-	NSString *msg =[NSString stringWithFormat:@"%@\r\n",message.text];
+	NSString *msg =[NSString stringWithFormat:@"synch_signal:%@\r\n",message.text];
 	NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
 	[self.clientSocket writeData:data withTimeout:-1 tag:1];
 }
@@ -94,14 +103,44 @@ BonjourViewController *rootViewController=NULL;
 	
 	NSData *strData = [data subdataWithRange:NSMakeRange(0, [data length] - 2)];
 	NSString *msg = [[[NSString alloc] initWithData:strData encoding:NSUTF8StringEncoding] autorelease];
-	if (msg) {		
-		UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Received" 
+	if (msg) 
+  {
+		NSRange colon = [msg rangeOfString:@":"];
+    NSRange headerRange = NSMakeRange(0, colon.location);
+    NSRange dataRange = NSMakeRange(colon.location+1, msg.length);
+    NSString* header = [msg substringWithRange:headerRange];
+    NSString* data = [msg substringWithRange:dataRange];
+    NSLog(@"Header: %@",header);
+    NSLog(@"Data received: %@",data);
+    
+    if([header isEqualToString:@"synch_signal"])
+    {
+      synchSignal = [data floatValue];
+      clockTime = 0;
+    }
+    else if([header isEqualToString:@"record_signal"])
+    {
+      
+    }
+    /*else if([header isEqualToString:@"ping_signal"])
+    {
+      NSString* pingString = [NSString stringWithFormat:@"ping_response:%@",@"handShake"];
+      NSData* pingData = [pingString dataUsingEncoding:NSUTF8StringEncoding];
+      sendTime = [[NSDate date] timeIntervalSince1970];
+      [self.clientSocket writeData:pingData withTimeout:-1 tag:1];
+    }
+    else if([header isEqualToString:@"ping_response"])
+    {
+      receivedTime = [data floatValue];
+    }*/
+    
+		/*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Received" 
 														message:msg 
 													   delegate:self
 											  cancelButtonTitle:@"OK"
 											  otherButtonTitles:nil];
 		[alert show];
-		[alert release];		
+		[alert release];	*/	
 	}
 	else {
 		debug.text = [debug.text stringByAppendingString:@"Error converting received data into UTF-8 String\n"];

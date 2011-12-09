@@ -8,7 +8,7 @@
 
 #import "videoManager.h"
 
-@implementation videoManager
+@implementation VideoManager
 @synthesize  captureSession;
 @synthesize  imageView;
 @synthesize  customLayer;
@@ -31,7 +31,7 @@
 	 In this example we set a min frame duration of 1/10 seconds so a maximum framerate of 10fps. We say that
 	 we are not able to process more than 10 frames per second.*/
 	//captureOutput.minFrameDuration = CMTimeMake(1, 10);
-	
+    
 	/*We create a serial queue to handle the processing of our frames*/
 	dispatch_queue_t queue;
 	queue = dispatch_queue_create("cameraQueue", NULL);
@@ -47,45 +47,29 @@
 	[self.captureSession addOutput:captureOutput];
     [self.captureSession setSessionPreset:AVCaptureSessionPresetHigh];
 	self.customLayer = [CALayer layer];
-    BonjourViewController *viewController=[BonjourViewController getRootViewController];
     
-	self.customLayer.frame = viewController.view.bounds;
+	self.customLayer.frame = captureOverlayView.bounds;
 	self.customLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI/2.0f, 0, 0, 1);
 	self.customLayer.contentsGravity = kCAGravityResizeAspectFill;
     
     ////// CODE HERE TO SHOW 
     
     
-	[self.view.layer addSublayer:self.customLayer];
-	/*We add the imageView*/
-	self.imageView = [[UIImageView alloc] init];
-	self.imageView.frame = CGRectMake(0, 0, 100, 100);
-    [self.view addSubview:self.imageView];
-	/*We add the preview layer*/
+	[captureOverlayView.layer addSublayer:self.customLayer];
+	overlayImageView = [[UIImageView alloc] init];
+	overlayImageView.frame = CGRectMake(0, 0, 100, 100);
+    [captureOverlayView addSubview:self.imageView];
 	self.prevLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
 	self.prevLayer.frame = CGRectMake(100, 0, 100, 100);
 	self.prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-	[self.view.layer addSublayer: self.prevLayer];
-	/*We start the capture*/
+	[captureOverlayView.layer addSublayer: self.prevLayer];
 	[self.captureSession startRunning];
-	
 }
 
 
--(void) initOverlayView:(CGSize)size
-{
+-(void) initOverlayView:(CGSize)size:(UIView *)_view{
     captureOverlayView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-    overlayImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height-44)];
-    UIToolbar *toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, size.width-44, size.width, 44)];
-    NSMutableArray *toolbarButtonSet=[[NSMutableArray alloc] init];
-    UIBarButtonItem *recordButton=[[UIBarButtonItem alloc] 
-                                   initWithBarButtonSystemItem:UIBarButtonItemStyleBordered target:self action:@selector(recordButtonClicked)];
-    recordButton.title=@"Record";
-    UIBarButtonItem *stop=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonItemStyleBordered target:self action:@selector(stopButtonClicked)];
-    recordButton.title=@"Stop";
-    
-    
-
+    [_view addSubview:captureOverlayView];
 }
 
 #pragma mark -
@@ -96,9 +80,9 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 { 
 	/*We create an autorelease pool because as we are not in the main_queue our code is
 	 not executed in the main thread. So we have to create an autorelease pool for the thread we are in*/
-	
+    
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	
+    
     CVImageBufferRef imageBuffer = CMSampleBufferGetImageBuffer(sampleBuffer); 
     /*Lock the image buffer*/
     CVPixelBufferLockBaseAddress(imageBuffer,0); 
@@ -112,7 +96,7 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB(); 
     CGContextRef newContext = CGBitmapContextCreate(baseAddress, width, height, 8, bytesPerRow, colorSpace, kCGBitmapByteOrder32Little | kCGImageAlphaPremultipliedFirst);
     CGImageRef newImage = CGBitmapContextCreateImage(newContext); 
-	
+    
     /*We release some components*/
     CGContextRelease(newContext); 
     CGColorSpaceRelease(colorSpace);
@@ -121,19 +105,19 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 	 UIKit is no thread safe, and as we are not in the main thread (remember we didn't use the main_queue)
 	 we use performSelectorOnMainThread to call our CALayer and tell it to display the CGImage.*/
 	[self.customLayer performSelectorOnMainThread:@selector(setContents:) withObject: (id) newImage waitUntilDone:YES];
-	
+    
 	/*We display the result on the image view (We need to change the orientation of the image so that the video is displayed correctly).
 	 Same thing as for the CALayer we are not in the main thread so ...*/
 	UIImage *image= [UIImage imageWithCGImage:newImage scale:1.0 orientation:UIImageOrientationRight];
-	
+    
 	/*We relase the CGImageRef*/
 	CGImageRelease(newImage);
-	
+    
 	[self.imageView performSelectorOnMainThread:@selector(setImage:) withObject:image waitUntilDone:YES];
-	
+    
 	/*We unlock the  image buffer*/
 	CVPixelBufferUnlockBaseAddress(imageBuffer,0);
-	
+    
 	[pool drain];
 } 
 @end
