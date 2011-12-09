@@ -1,11 +1,3 @@
-//
-//  videoManager.h
-//  Bonjour
-//
-//  Created by PRANAV KAPOOR on 12/4/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreGraphics/CoreGraphics.h>

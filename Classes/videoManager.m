@@ -1,12 +1,4 @@
-//
-//  videoManager.m
-//  Bonjour
-//
-//  Created by PRANAV KAPOOR on 12/4/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
-//
-
-#import "videoManager.h"
+#import "VideoManager.h"
 
 @implementation VideoManager
 @synthesize  captureSession;

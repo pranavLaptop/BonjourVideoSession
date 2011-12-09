@@ -1,13 +1,3 @@
-//
-//  AsyncSocket.m
-//  
-//  This class is in the public domain.
-//  Originally created by Dustin Voss on Wed Jan 29 2003.
-//  Updated and maintained by Deusty Designs and the Mac development community.
-//
-//  http://code.google.com/p/cocoaasyncsocket/
-//
-
 #import "AsyncSocket.h"
 #import <sys/socket.h>
 #import <netinet/in.h>
