@@ -52,6 +52,7 @@
 -(IBAction) doneEditing:(id) sender;
 -(IBAction) btnSynchronize:(id)sender;
 -(IBAction)btnRecord:(id)sender;
+-(void) sendDataToServer:(NSString*) stringToSend;
 +(BonjourViewController *) getRootViewController;
 
 @end

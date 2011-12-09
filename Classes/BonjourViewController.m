@@ -51,12 +51,19 @@ BonjourViewController *rootViewController=NULL;
 		self.clientSocket = socket;
 	}
 	[socket release];	
+  [btnSynchronize setEnabled:TRUE];
 }
 
 -(IBAction)btnSynchronize:(id)sender
 {
   NSString* synchString = [NSString stringWithFormat:@"%f\r\n",[[NSDate date] timeIntervalSince1970]];
-  NSData* data = [synchString dataUsingEncoding:NSUTF8StringEncoding];
+  [self sendDataToServer:synchString];
+  
+}
+
+-(void) sendDataToServer:(NSString*) stringToSend
+{
+  NSData* data = [stringToSend dataUsingEncoding:NSUTF8StringEncoding];
   [self.clientSocket writeData:data withTimeout:-1 tag:1];
 }
 
@@ -64,8 +71,7 @@ BonjourViewController *rootViewController=NULL;
 {
   isRecording = TRUE;
   NSString *msg =[NSString stringWithFormat:@"record_signal:startRecording\r\n"];
-	NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
-	[self.clientSocket writeData:data withTimeout:-1 tag:1];
+	[self sendDataToServer:msg];
   vManager=[[VideoManager alloc] init];
   [vManager initOverlayView:self.view.frame.size :self.view];
   [vManager initCapture];
@@ -74,8 +80,7 @@ BonjourViewController *rootViewController=NULL;
 
 -(IBAction) btnSend:(id)sender {
 	NSString *msg =[NSString stringWithFormat:@"synch_signal:%@\r\n",message.text];
-	NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
-	[self.clientSocket writeData:data withTimeout:-1 tag:1];
+	[self sendDataToServer:msg];
   [btnRecord setEnabled:TRUE];
 }
 
