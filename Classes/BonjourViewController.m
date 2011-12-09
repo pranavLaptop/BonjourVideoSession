@@ -1,11 +1,3 @@
-//
-//  BonjourViewController.m
-//  Bonjour
-//
-//  Created by Wei-Meng Lee on 7/1/10.
-//  Copyright __MyCompanyName__ 2010. All rights reserved.
-//
-
 #import "BonjourViewController.h"
 
 #import <netinet/in.h>
@@ -56,8 +48,6 @@ BonjourViewController *rootViewController=NULL;
 	else {
 		debug.text = [debug.text stringByAppendingString:@"Connected\n"];
         NSLog ( @"The current date and time is: %f", [[NSDate date] timeIntervalSince1970] );
-
-		//---save the instance of the socket---
 		self.clientSocket = socket;
 	}
 	[socket release];	
@@ -70,10 +60,23 @@ BonjourViewController *rootViewController=NULL;
   [self.clientSocket writeData:data withTimeout:-1 tag:1];
 }
 
+-(IBAction)btnRecord:(id)sender
+{
+  isRecording = TRUE;
+  NSString *msg =[NSString stringWithFormat:@"record_signal:startRecording\r\n"];
+	NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
+	[self.clientSocket writeData:data withTimeout:-1 tag:1];
+  vManager=[[VideoManager alloc] init];
+  [vManager initOverlayView:self.view.frame.size :self.view];
+  [vManager initCapture];
+}
+
+
 -(IBAction) btnSend:(id)sender {
 	NSString *msg =[NSString stringWithFormat:@"synch_signal:%@\r\n",message.text];
 	NSData *data = [msg dataUsingEncoding:NSUTF8StringEncoding];
 	[self.clientSocket writeData:data withTimeout:-1 tag:1];
+  [btnRecord setEnabled:TRUE];
 }
 
 - (void)onSocket:(AsyncSocket *)sock didAcceptNewSocket:(AsyncSocket *)newSocket {
@@ -116,12 +119,16 @@ BonjourViewController *rootViewController=NULL;
     if([header isEqualToString:@"synch_signal"])
     {
       synchSignal = [data floatValue];
-      clockTime = 0;
+      [btnRecord setEnabled:TRUE];
     }
-    else if([header isEqualToString:@"record_signal"])
+    else if([header isEqualToString:@"record_signal"] && !isRecording)
     {
-      
+      isRecording = TRUE;
+      vManager=[[VideoManager alloc] init];
+      [vManager initOverlayView:self.view.frame.size :self.view];
+      [vManager initCapture];
     }
+    
     /*else if([header isEqualToString:@"ping_signal"])
     {
       NSString* pingString = [NSString stringWithFormat:@"ping_response:%@",@"handShake"];

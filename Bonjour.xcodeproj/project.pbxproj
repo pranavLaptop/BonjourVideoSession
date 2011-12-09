@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		089898F21492AC9700A81672 /* VideoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 089898F11492AC9700A81672 /* VideoManager.m */; };
+		089898F61492ACDB00A81672 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089898F31492ACDB00A81672 /* CoreMedia.framework */; };
+		089898F71492ACDB00A81672 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089898F41492ACDB00A81672 /* CoreVideo.framework */; };
+		089898F81492ACDB00A81672 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 089898F51492ACDB00A81672 /* QuartzCore.framework */; };
 		1D3623260D0F684500981E51 /* BonjourAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* BonjourAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -17,12 +21,16 @@
 		28D7ACF80DDB3853001CB0EB /* BonjourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */; };
 		7DDAF1B4148C582000539036 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAF1B3148C582000539036 /* SessionManager.m */; };
 		7DDAF1B7148C597700539036 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDAF1B6148C597700539036 /* AVFoundation.framework */; };
-		7DDAF1BA148C598900539036 /* videoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAF1B9148C598900539036 /* videoManager.m */; };
 		B72395B311DC6BD300DA36CE /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B72395B211DC6BD300DA36CE /* AsyncSocket.m */; };
 		B72395B611DC6C1C00DA36CE /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B72395B511DC6C1C00DA36CE /* CFNetwork.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		089898F01492AC9700A81672 /* VideoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoManager.h; sourceTree = "<group>"; };
+		089898F11492AC9700A81672 /* VideoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoManager.m; sourceTree = "<group>"; };
+		089898F31492ACDB00A81672 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		089898F41492ACDB00A81672 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		089898F51492ACDB00A81672 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* BonjourAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BonjourAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* BonjourAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourAppDelegate.m; sourceTree = "<group>"; };
@@ -38,8 +46,6 @@
 		7DDAF1B2148C582000539036 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
 		7DDAF1B3148C582000539036 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
 		7DDAF1B6148C597700539036 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		7DDAF1B8148C598900539036 /* videoManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = videoManager.h; sourceTree = "<group>"; };
-		7DDAF1B9148C598900539036 /* videoManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = videoManager.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Bonjour-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Bonjour-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		B72395B111DC6BD300DA36CE /* AsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSocket.h; sourceTree = "<group>"; };
 		B72395B211DC6BD300DA36CE /* AsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSocket.m; sourceTree = "<group>"; };
@@ -51,6 +57,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				089898F61492ACDB00A81672 /* CoreMedia.framework in Frameworks */,
+				089898F71492ACDB00A81672 /* CoreVideo.framework in Frameworks */,
+				089898F81492ACDB00A81672 /* QuartzCore.framework in Frameworks */,
 				7DDAF1B7148C597700539036 /* AVFoundation.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
@@ -65,6 +74,8 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				089898F01492AC9700A81672 /* VideoManager.h */,
+				089898F11492AC9700A81672 /* VideoManager.m */,
 				B72395B111DC6BD300DA36CE /* AsyncSocket.h */,
 				B72395B211DC6BD300DA36CE /* AsyncSocket.m */,
 				1D3623240D0F684500981E51 /* BonjourAppDelegate.h */,
@@ -73,8 +84,6 @@
 				28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */,
 				7DDAF1B2148C582000539036 /* SessionManager.h */,
 				7DDAF1B3148C582000539036 /* SessionManager.m */,
-				7DDAF1B8148C598900539036 /* videoManager.h */,
-				7DDAF1B9148C598900539036 /* videoManager.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -90,6 +99,9 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				089898F31492ACDB00A81672 /* CoreMedia.framework */,
+				089898F41492ACDB00A81672 /* CoreVideo.framework */,
+				089898F51492ACDB00A81672 /* QuartzCore.framework */,
 				7DDAF1B6148C597700539036 /* AVFoundation.framework */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -193,7 +205,7 @@
 				28D7ACF80DDB3853001CB0EB /* BonjourViewController.m in Sources */,
 				B72395B311DC6BD300DA36CE /* AsyncSocket.m in Sources */,
 				7DDAF1B4148C582000539036 /* SessionManager.m in Sources */,
-				7DDAF1BA148C598900539036 /* videoManager.m in Sources */,
+				089898F21492AC9700A81672 /* VideoManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

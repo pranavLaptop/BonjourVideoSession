@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "AsyncSocket.h"
+#import "VideoManager.h"
 
 @interface BonjourViewController : UIViewController 
     <UITableViewDelegate, 
@@ -26,13 +27,15 @@
 	
 	IBOutlet UITextField *message;
 	NSString *serviceIP;
-    AsyncSocket *listenSocket;
+  AsyncSocket *listenSocket;
 	AsyncSocket *clientSocket;
 	NSMutableArray *connectedSockets;		
   float synchSignal;
   float sendTime;
   float receivedTime;
-  int clockTime;
+  float clockTime;
+  bool isRecording;
+  VideoManager* vManager;
 }
 
 -(void) resolveIPAddress:(NSNetService *)service;
@@ -56,6 +59,7 @@
 -(IBAction) btnSend:(id)sender;
 -(IBAction) doneEditing:(id) sender;
 -(IBAction) btnSynchronize:(id)sender;
+-(IBAction)btnRecord:(id)sender;
 +(BonjourViewController *) getRootViewController;
 
 @end

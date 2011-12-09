@@ -11,7 +11,6 @@
 #import <CoreGraphics/CoreGraphics.h>
 #import <CoreVideo/CoreVideo.h>
 #import <CoreMedia/CoreMedia.h>
-#import "BonjourViewController.h"
 #import "VideoManager.h"
 
 @interface VideoManager :NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
