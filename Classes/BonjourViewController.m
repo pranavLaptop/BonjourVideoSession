@@ -57,6 +57,7 @@ BonjourViewController *rootViewController=NULL;
 -(IBAction)btnSynchronize:(id)sender
 {
   NSString* synchString = [NSString stringWithFormat:@"%f\r\n",[[NSDate date] timeIntervalSince1970]];
+  NSLog(@"Inside btnSynchronize, sending: %@, to peer",synchString);
   [self sendDataToServer:synchString];
   
 }
@@ -64,6 +65,7 @@ BonjourViewController *rootViewController=NULL;
 -(void) sendDataToServer:(NSString*) stringToSend
 {
   NSData* data = [stringToSend dataUsingEncoding:NSUTF8StringEncoding];
+  NSLog(@"Inside sendDataToServer, sending: %@, to the peer",stringToSend);
   [self.clientSocket writeData:data withTimeout:-1 tag:1];
 }
 
