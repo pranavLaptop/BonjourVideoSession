@@ -108,13 +108,15 @@ BonjourViewController *rootViewController=NULL;
 	debug.text = [debug.text stringByAppendingString:@"didWriteDataWithTag\n"];
 }
 
-- (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag {
+- (void)onSocket:(AsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag 
+{
 	debug.text = [debug.text stringByAppendingString:@"didReadData\n"];
 	
 	NSData *strData = [data subdataWithRange:NSMakeRange(0, [data length] - 2)];
 	NSString *msg = [[[NSString alloc] initWithData:strData encoding:NSUTF8StringEncoding] autorelease];
 	if (msg) 
   {
+    NSLog(@"Received data from peer: %@",msg);
 		NSRange colon = [msg rangeOfString:@":"];
     NSRange headerRange = NSMakeRange(0, colon.location);
     NSRange dataRange = NSMakeRange(colon.location+1, msg.length);
