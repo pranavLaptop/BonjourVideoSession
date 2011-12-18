@@ -56,7 +56,7 @@ BonjourViewController *rootViewController=NULL;
 
 -(IBAction)btnSynchronize:(id)sender
 {
-  NSString* synchString = [NSString stringWithFormat:@"%f\r\n",[[NSDate date] timeIntervalSince1970]];
+  NSString* synchString = [NSString stringWithFormat:@"synch_signal:%f\r\n",[[NSDate date] timeIntervalSince1970]];
   NSLog(@"Inside btnSynchronize, sending: %@, to peer",synchString);
   [self sendDataToServer:synchString];
   
