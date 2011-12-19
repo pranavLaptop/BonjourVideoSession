@@ -141,7 +141,9 @@ BonjourViewController *rootViewController=NULL;
     {
       isRecording = TRUE;
       vManager=[[VideoManager alloc] init];
-      vManager.callBackObject = (id*)self;
+      vManager.callBackObject = self;
+      recordStartTime = [[NSDate date] timeIntervalSince1970];
+      NSLog(@"Time when synch signal received:%f\n Time when record signal received:%f",synchSignal,recordStartTime);
       [vManager initOverlayView:self.view.frame.size :self.view];
       [vManager initCapture];
     }

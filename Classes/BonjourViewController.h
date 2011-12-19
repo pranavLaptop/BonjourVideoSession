@@ -3,29 +3,30 @@
 #import "VideoManager.h"
 
 @interface BonjourViewController : UIViewController 
-    <UITableViewDelegate, 
-    UITableViewDataSource,
-    NSNetServiceDelegate, 
-    NSNetServiceBrowserDelegate> {
+  <UITableViewDelegate, 
+  UITableViewDataSource,
+  NSNetServiceDelegate, 
+  NSNetServiceBrowserDelegate> {
+      
 	//—-outlets—-
-    IBOutlet UITableView *tbView;
-    IBOutlet UITextView *debug;
-    IBOutlet UIButton* btnSynchronize;
-    IBOutlet UIButton* btnRecord;  
+  IBOutlet UITableView *tbView;
+  IBOutlet UITextView *debug;
+  IBOutlet UIButton* btnSynchronize;
+  IBOutlet UIButton* btnRecord;  
 	
 	//—-use for browsing services—-	
-    NSNetServiceBrowser *browser;	
-    NSMutableArray *services;
+  NSNetServiceBrowser *browser;	
+  NSMutableArray *services;
 	
 	IBOutlet UITextField *message;
 	NSString *serviceIP;
   AsyncSocket *listenSocket;
-	AsyncSocket *clientSocket;
-	NSMutableArray *connectedSockets;		
+  AsyncSocket *clientSocket;
+  NSMutableArray *connectedSockets;		
   float synchSignal;
   float sendTime;
-  float receivedTime;
-  float clockTime;
+  float recordStartTime;
+  float currentTime;
   bool isRecording;
   VideoManager* vManager;
 }
