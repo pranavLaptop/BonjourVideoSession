@@ -13,7 +13,7 @@
 	AVCaptureVideoPreviewLayer *_prevLayer;
     UIView  *captureOverlayView;
     UIImageView *overlayImageView;
-    
+    AVCaptureMovieFileOutput *captureOutput;
     UIViewController *viewController;
 }
 
@@ -31,6 +31,7 @@
 
 - (void)initCapture;
 - (void)endCapture;
+- (void) stopRecording;
 - (void)beginCapture;
 -(void) initOverlayView:(CGSize)size:(UIView *)_view;
 @end

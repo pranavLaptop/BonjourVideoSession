@@ -19,6 +19,7 @@
 		2899E5220DE3E06400AC0155 /* BonjourViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* BonjourViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* BonjourViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */; };
+		7D2FD7E0149EC7B200B00CFC /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D2FD7DF149EC7B200B00CFC /* AssetsLibrary.framework */; };
 		7DDAF1B4148C582000539036 /* SessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDAF1B3148C582000539036 /* SessionManager.m */; };
 		7DDAF1B7148C597700539036 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DDAF1B6148C597700539036 /* AVFoundation.framework */; };
 		B72395B311DC6BD300DA36CE /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = B72395B211DC6BD300DA36CE /* AsyncSocket.m */; };
@@ -43,6 +44,7 @@
 		28D7ACF70DDB3853001CB0EB /* BonjourViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BonjourViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Bonjour_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bonjour_Prefix.pch; sourceTree = "<group>"; };
+		7D2FD7DF149EC7B200B00CFC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		7DDAF1B2148C582000539036 /* SessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionManager.h; sourceTree = "<group>"; };
 		7DDAF1B3148C582000539036 /* SessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionManager.m; sourceTree = "<group>"; };
 		7DDAF1B6148C597700539036 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -57,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D2FD7E0149EC7B200B00CFC /* AssetsLibrary.framework in Frameworks */,
 				089898F61492ACDB00A81672 /* CoreMedia.framework in Frameworks */,
 				089898F71492ACDB00A81672 /* CoreVideo.framework in Frameworks */,
 				089898F81492ACDB00A81672 /* QuartzCore.framework in Frameworks */,
@@ -99,6 +102,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				7D2FD7DF149EC7B200B00CFC /* AssetsLibrary.framework */,
 				089898F31492ACDB00A81672 /* CoreMedia.framework */,
 				089898F41492ACDB00A81672 /* CoreVideo.framework */,
 				089898F51492ACDB00A81672 /* QuartzCore.framework */,
@@ -216,6 +220,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rakesh Kapoor (27DNJ5JEU2)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -223,6 +228,7 @@
 				GCC_PREFIX_HEADER = Bonjour_Prefix.pch;
 				INFOPLIST_FILE = "Bonjour-Info.plist";
 				PRODUCT_NAME = Bonjour;
+				PROVISIONING_PROFILE = "7986FC51-05AE-4680-83F7-A34907D477AF";
 				SDKROOT = iphoneos5.0;
 			};
 			name = Debug;
@@ -231,11 +237,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rakesh Kapoor (27DNJ5JEU2)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Bonjour_Prefix.pch;
 				INFOPLIST_FILE = "Bonjour-Info.plist";
 				PRODUCT_NAME = Bonjour;
+				PROVISIONING_PROFILE = "7986FC51-05AE-4680-83F7-A34907D477AF";
 				SDKROOT = iphoneos5.0;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -245,11 +253,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rakesh Kapoor (27DNJ5JEU2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "7986FC51-05AE-4680-83F7-A34907D477AF";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Debug;
@@ -258,12 +268,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Rakesh Kapoor (27DNJ5JEU2)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				PREBINDING = NO;
+				PROVISIONING_PROFILE = "7986FC51-05AE-4680-83F7-A34907D477AF";
 				SDKROOT = iphoneos4.0;
 			};
 			name = Release;

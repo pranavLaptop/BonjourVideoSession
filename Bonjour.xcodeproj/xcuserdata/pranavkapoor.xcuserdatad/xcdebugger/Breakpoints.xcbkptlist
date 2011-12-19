@@ -4,17 +4,17 @@
    version = "1.0">
    <FileBreakpoints>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          isPathRelative = "1"
-         filePath = "Classes/BonjourViewController.m"
-         timestampString = "345944494.47603"
+         filePath = "Classes/VideoManager.m"
+         timestampString = "345950596.702169"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
-         landmarkName = "-onSocket:didReadData:withTag:"
+         startingLineNumber = "173"
+         endingLineNumber = "173"
+         landmarkName = "-captureOutput:didOutputSampleBuffer:fromConnection:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

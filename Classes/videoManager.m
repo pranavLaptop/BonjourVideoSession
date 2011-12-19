@@ -7,6 +7,8 @@
 //
 
 #import "videoManager.h"
+#import <AssetsLibrary/AssetsLibrary.h>
+#import <ImageIO/ImageIO.h>
 
 @implementation VideoManager
 @synthesize  captureSession;
@@ -21,11 +23,13 @@
 	AVCaptureDeviceInput *captureInput = [AVCaptureDeviceInput 
                                         deviceInputWithDevice:[AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo] 
                                         error:nil];
+    captureOutput = [[AVCaptureMovieFileOutput alloc] init];
+
 	/*We setupt the output*/
-	AVCaptureVideoDataOutput *captureOutput = [[AVCaptureVideoDataOutput alloc] init];
+	//AVCaptureVideoDataOutput *captureOutput = [[AVCaptureVideoDataOutput alloc] init];
 	/*While a frame is processes in -captureOutput:didOutputSampleBuffer:fromConnection: delegate methods no other frames are added in the queue.
 	 If you don't want this behaviour set the property to NO */
-	captureOutput.alwaysDiscardsLateVideoFrames = YES; 
+	//captureOutput.alwaysDiscardsLateVideoFrames = YES; 
 	/*We specify a minimum duration for each frame (play with this settings to avoid having too many frames waiting
 	 in the queue because it can cause memory issues). It is similar to the inverse of the maximum framerate.
 	 In this example we set a min frame duration of 1/10 seconds so a maximum framerate of 10fps. We say that
@@ -35,20 +39,21 @@
 	/*We create a serial queue to handle the processing of our frames*/
 	dispatch_queue_t queue;
 	queue = dispatch_queue_create("cameraQueue", NULL);
-	[captureOutput setSampleBufferDelegate:self queue:queue];
+	//[captureOutput setSampleBufferDelegate:self queue:queue];
 	dispatch_release(queue);
 	// Set the video output to store frame in BGRA (It is supposed to be faster)
 	NSString* key = (NSString*)kCVPixelBufferPixelFormatTypeKey; 
 	NSNumber* value = [NSNumber numberWithUnsignedInt:kCVPixelFormatType_32BGRA]; 
 	NSDictionary* videoSettings = [NSDictionary dictionaryWithObject:value forKey:key]; 
-	[captureOutput setVideoSettings:videoSettings]; 
+	//[captureOutput setVideoSettings:videoSettings]; 
+    
 	self.captureSession = [[AVCaptureSession alloc] init];
 	[self.captureSession addInput:captureInput];
 	[self.captureSession addOutput:captureOutput];
   [self.captureSession setSessionPreset:AVCaptureSessionPresetHigh];
 	self.customLayer = [CALayer layer];
   
-	self.customLayer.frame = CGRectMake(0, 0, 320, 480);
+	self.customLayer.frame = CGRectMake(0, 0, 320, 420);
 	self.customLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI/2.0f, 0, 0, 1);
 	self.customLayer.contentsGravity = kCAGravityResizeAspectFill;
   
@@ -57,18 +62,85 @@
 	//overlayImageView = [[UIImageView alloc] init];
 	//overlayImageView.frame = CGRectMake(0, 0, 100, 100);
   //[captureOverlayView addSubview:self.imageView];
-	self.prevLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
-	self.prevLayer.frame = CGRectMake(0, 0, 320, 480);
+    self.prevLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
+	self.prevLayer.frame = CGRectMake(0, 0, 320, 420);
 	self.prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
 	[captureOverlayView.layer addSublayer: self.prevLayer];
-	[self.captureSession startRunning];
+    [self.captureSession startRunning];
+    [captureOutput startRecordingToOutputFileURL:[self tempFileURL] recordingDelegate:self];
+
 }
 
+- (NSURL *) tempFileURL
+{
+    
+    NSString *outputPath = [[NSString alloc] initWithFormat:@"%@%@", NSTemporaryDirectory(), @"output.mov"];
+    NSURL *outputURL = [[NSURL alloc] initFileURLWithPath:outputPath];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:outputPath]) {
+        NSLog(@"file saved");
+    }
+    [outputPath release];
+    return [outputURL autorelease];
+}
 
 -(void) initOverlayView:(CGSize)size:(UIView *)_view{
   captureOverlayView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-  [_view addSubview:captureOverlayView];
+    UIToolbar *toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 480-60, 320, 44)];
+    UIBarButtonItem *barItem=[[UIBarButtonItem alloc] initWithTitle:@"Done" 
+                                                                 style:UIBarButtonItemStyleDone 
+                                                                target:self 
+                                                                action:@selector(stopRecording)];
+
+    barItem.title=@"Stop";
+    toolbar.items=[NSArray arrayWithObjects:barItem,nil];
+    [_view addSubview:captureOverlayView];
+    [_view addSubview:toolbar];
+
 }
+
+-(void) stopRecording
+{
+    NSLog(@"stopRecording");
+    [captureSession stopRunning];
+}
+
++ (AVCaptureConnection *)connectionWithMediaType:(NSString *)mediaType fromConnections:(NSArray *)connections;
+{
+    for ( AVCaptureConnection *connection in connections ) {
+        for ( AVCaptureInputPort *port in [connection inputPorts] ) {
+            if ( [[port mediaType] isEqual:mediaType] ) {
+                return [[connection retain] autorelease];
+            }
+        }
+    }
+    return nil;
+}
+     
+-(void)captureOutput:(AVCaptureFileOutput *)captureOutput
+didStartRecordingToOutputFileAtURL:(NSURL *)fileURL
+fromConnections:(NSArray *)connections
+{
+    
+}
+
+- (void)captureOutput:(AVCaptureFileOutput *)captureOutput
+didFinishRecordingToOutputFileAtURL:(NSURL *)outputFileURL
+      fromConnections:(NSArray *)connections
+                error:(NSError *)error
+{
+    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
+    if ([library videoAtPathIsCompatibleWithSavedPhotosAlbum:outputFileURL]) {
+        [library writeVideoAtPathToSavedPhotosAlbum:outputFileURL completionBlock:^(NSURL *assetURL, NSError *error){}];
+    }
+    
+    [library release];    
+    
+}
+
+
+
+
 
 #pragma mark -
 #pragma mark AVCaptureSession delegate
