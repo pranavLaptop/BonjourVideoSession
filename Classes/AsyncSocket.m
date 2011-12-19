@@ -2562,6 +2562,7 @@ Failed:;
 
 - (void)writeData:(NSData *)data withTimeout:(NSTimeInterval)timeout tag:(long)tag;
 {
+    NSLog(@"writing data to the stream");
 	if (data == nil || [data length] == 0) return;
 	if (theFlags & kForbidReadsWrites) return;
 	
@@ -2571,6 +2572,7 @@ Failed:;
 	[self scheduleDequeueWrite];
 	
 	[packet release];
+    NSLog(@"Done writing the message on the stream.");
 }
 
 - (void)scheduleDequeueWrite

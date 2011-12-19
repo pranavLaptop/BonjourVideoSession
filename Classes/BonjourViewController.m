@@ -143,17 +143,24 @@ BonjourViewController *rootViewController=NULL;
       vManager=[[VideoManager alloc] init];
       vManager.callBackObject = self;
       recordStartTime = [[NSDate date] timeIntervalSince1970];
-      NSLog(@"Time when synch signal received:%f\n Time when record signal received:%f",synchSignal,recordStartTime);
+      NSLog(@"Time when synch signal received:%f\n Time when record signal received:%f",synchSignal,recordStartTime); 
       [vManager initOverlayView:self.view.frame.size :self.view];
       [vManager initCapture];
     }
-    else if([header isEqualToString:@"stop_recording"] && isRecording)
+    else if([header isEqualToString:@"stop_recording"])
     {
+        NSLog(@"Stopping recording");
         isRecording = FALSE;
         if(vManager != NULL)
         {
+            NSLog(@"vManager not NULL");
             [vManager stopRecording];
         }
+        else
+        {
+            NSLog(@"vManager NULL");
+        }
+        
     }
     
     /*else if([header isEqualToString:@"ping_signal"])
