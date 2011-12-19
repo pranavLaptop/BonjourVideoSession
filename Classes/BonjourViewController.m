@@ -117,9 +117,9 @@ BonjourViewController *rootViewController=NULL;
 	if (msg) 
   {
     NSLog(@"Received data from peer: %@",msg);
-		NSRange colon = [msg rangeOfString:@":"];
+    NSRange colon = [msg rangeOfString:@":"];
     NSRange headerRange = NSMakeRange(0, colon.location);
-    NSRange dataRange = NSMakeRange(colon.location+1, msg.length);
+    NSRange dataRange = NSMakeRange(colon.location+1, msg.length-(colon.location+1));
     NSString* header = [msg substringWithRange:headerRange];
     NSString* data = [msg substringWithRange:dataRange];
     NSLog(@"Header: %@",header);
