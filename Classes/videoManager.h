@@ -5,6 +5,8 @@
 #import <CoreMedia/CoreMedia.h>
 #import "VideoManager.h"
 
+@class  BonjourViewController;
+
 @interface VideoManager :NSObject <AVCaptureVideoDataOutputSampleBufferDelegate> {
 	AVCaptureSession *_captureSession;
     UIView *view;
@@ -15,6 +17,7 @@
     UIImageView *overlayImageView;
     AVCaptureMovieFileOutput *captureOutput;
     UIViewController *viewController;
+    BonjourViewController* _callBackObject;
 }
 
 ////Camera Session Init
@@ -28,6 +31,8 @@
 
 ///Find out more
 @property (nonatomic, retain) AVCaptureVideoPreviewLayer *prevLayer;
+
+@property (nonatomic, retain) BonjourViewController* callBackObject;
 
 - (void)initCapture;
 - (void)endCapture;

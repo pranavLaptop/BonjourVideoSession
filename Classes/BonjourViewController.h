@@ -47,6 +47,8 @@
 @property (nonatomic, retain) AsyncSocket *clientSocket;
 @property (nonatomic, retain) NSString *serviceIP;
 
+@property bool isRecording;
+
 -(IBAction) btnConnect:(id)sender;
 -(IBAction) btnSend:(id)sender;
 -(IBAction) doneEditing:(id) sender;
@@ -54,6 +56,7 @@
 -(IBAction)btnRecord:(id)sender;
 -(void) sendDataToServer:(NSString*) stringToSend;
 +(BonjourViewController *) getRootViewController;
+- (void) stopRecording;
 
 @end
 

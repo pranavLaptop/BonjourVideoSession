@@ -14,6 +14,7 @@
 @synthesize serviceIP;
 @synthesize btnSynchronize;
 @synthesize btnRecord;
+@synthesize isRecording;
 
 
 BonjourViewController *rootViewController=NULL;
@@ -104,6 +105,12 @@ BonjourViewController *rootViewController=NULL;
 	[sock readDataToData:[AsyncSocket CRLFData] withTimeout:-1 tag:1];
 }
 
+- (void) stopRecording
+{
+    NSString *msg =[NSString stringWithFormat:@"stop_recording:Stop Recording"];
+	[self sendDataToServer:msg];
+}
+
 - (void)onSocket:(AsyncSocket *)sock didWriteDataWithTag:(long)tag {
 	debug.text = [debug.text stringByAppendingString:@"didWriteDataWithTag\n"];
 }
@@ -134,8 +141,17 @@ BonjourViewController *rootViewController=NULL;
     {
       isRecording = TRUE;
       vManager=[[VideoManager alloc] init];
+      vManager.callBackObject = (id*)self;
       [vManager initOverlayView:self.view.frame.size :self.view];
       [vManager initCapture];
+    }
+    else if([header isEqualToString:@"stop_recording"] && isRecording)
+    {
+        isRecording = FALSE;
+        if(vManager != NULL)
+        {
+            [vManager stopRecording];
+        }
     }
     
     /*else if([header isEqualToString:@"ping_signal"])
@@ -150,16 +166,10 @@ BonjourViewController *rootViewController=NULL;
       receivedTime = [data floatValue];
     }*/
     
-		/*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Message Received" 
-														message:msg 
-													   delegate:self
-											  cancelButtonTitle:@"OK"
-											  otherButtonTitles:nil];
-		[alert show];
-		[alert release];	*/	
 	}
-	else {
-		debug.text = [debug.text stringByAppendingString:@"Error converting received data into UTF-8 String\n"];
+	else 
+    {
+        debug.text = [debug.text stringByAppendingString:@"Error converting received data into UTF-8 String\n"];
 	}
 	[sock readDataToData:[AsyncSocket CRLFData] withTimeout:-1 tag:1];
 }

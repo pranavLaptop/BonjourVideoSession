@@ -9,12 +9,14 @@
 #import "videoManager.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <ImageIO/ImageIO.h>
+#import "BonjourViewController.h"
 
 @implementation VideoManager
 @synthesize  captureSession;
 @synthesize  imageView;
 @synthesize  customLayer;
 @synthesize  prevLayer;
+@synthesize callBackObject;
 
 
 
@@ -25,17 +27,6 @@
                                         error:nil];
     captureOutput = [[AVCaptureMovieFileOutput alloc] init];
 
-	/*We setupt the output*/
-	//AVCaptureVideoDataOutput *captureOutput = [[AVCaptureVideoDataOutput alloc] init];
-	/*While a frame is processes in -captureOutput:didOutputSampleBuffer:fromConnection: delegate methods no other frames are added in the queue.
-	 If you don't want this behaviour set the property to NO */
-	//captureOutput.alwaysDiscardsLateVideoFrames = YES; 
-	/*We specify a minimum duration for each frame (play with this settings to avoid having too many frames waiting
-	 in the queue because it can cause memory issues). It is similar to the inverse of the maximum framerate.
-	 In this example we set a min frame duration of 1/10 seconds so a maximum framerate of 10fps. We say that
-	 we are not able to process more than 10 frames per second.*/
-	//captureOutput.minFrameDuration = CMTimeMake(1, 10);
-  
 	/*We create a serial queue to handle the processing of our frames*/
 	dispatch_queue_t queue;
 	queue = dispatch_queue_create("cameraQueue", NULL);
@@ -50,18 +41,13 @@
 	self.captureSession = [[AVCaptureSession alloc] init];
 	[self.captureSession addInput:captureInput];
 	[self.captureSession addOutput:captureOutput];
-  [self.captureSession setSessionPreset:AVCaptureSessionPresetHigh];
+    [self.captureSession setSessionPreset:AVCaptureSessionPresetHigh];
 	self.customLayer = [CALayer layer];
   
 	self.customLayer.frame = CGRectMake(0, 0, 320, 420);
 	self.customLayer.transform = CATransform3DRotate(CATransform3DIdentity, M_PI/2.0f, 0, 0, 1);
 	self.customLayer.contentsGravity = kCAGravityResizeAspectFill;
   
-  ////// CODE HERE TO SHOW 
-	//[captureOverlayView.layer addSublayer:self.customLayer];
-	//overlayImageView = [[UIImageView alloc] init];
-	//overlayImageView.frame = CGRectMake(0, 0, 100, 100);
-  //[captureOverlayView addSubview:self.imageView];
     self.prevLayer = [AVCaptureVideoPreviewLayer layerWithSession: self.captureSession];
 	self.prevLayer.frame = CGRectMake(0, 0, 320, 420);
 	self.prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
@@ -87,12 +73,11 @@
 -(void) initOverlayView:(CGSize)size:(UIView *)_view{
   captureOverlayView=[[UIView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     UIToolbar *toolbar=[[UIToolbar alloc] initWithFrame:CGRectMake(0, 480-60, 320, 44)];
-    UIBarButtonItem *barItem=[[UIBarButtonItem alloc] initWithTitle:@"Done" 
+    UIBarButtonItem *barItem=[[UIBarButtonItem alloc] initWithTitle:@"Stop" 
                                                                  style:UIBarButtonItemStyleDone 
                                                                 target:self 
                                                                 action:@selector(stopRecording)];
 
-    barItem.title=@"Stop";
     toolbar.items=[NSArray arrayWithObjects:barItem,nil];
     [_view addSubview:captureOverlayView];
     [_view addSubview:toolbar];
@@ -102,6 +87,8 @@
 -(void) stopRecording
 {
     NSLog(@"stopRecording");
+    self.callBackObject.isRecording = FALSE;
+    [self.callBackObject stopRecording];
     [captureSession stopRunning];
 }
 
