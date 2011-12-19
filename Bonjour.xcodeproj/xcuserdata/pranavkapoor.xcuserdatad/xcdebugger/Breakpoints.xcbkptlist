@@ -9,12 +9,26 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/VideoManager.m"
-         timestampString = "345950596.702169"
+         timestampString = "345953771.761399"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "173"
-         endingLineNumber = "173"
+         startingLineNumber = "179"
+         endingLineNumber = "179"
          landmarkName = "-captureOutput:didOutputSampleBuffer:fromConnection:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Classes/VideoManager.m"
+         timestampString = "345953771.761399"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "-initCapture"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -52,7 +52,13 @@
 	self.prevLayer.frame = CGRectMake(0, 0, 320, 420);
 	self.prevLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
 	[captureOverlayView.layer addSublayer: self.prevLayer];
+    NSString *outputPath = [[NSString alloc] initWithFormat:@"%@%@", NSTemporaryDirectory(), @"output.mov"];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    if ([fileManager fileExistsAtPath:outputPath]) {
+        [fileManager removeItemAtURL:[self tempFileURL] error:nil]; 
+    }
     [self.captureSession startRunning];
+    
     [captureOutput startRecordingToOutputFileURL:[self tempFileURL] recordingDelegate:self];
 
 }
@@ -64,7 +70,7 @@
     NSURL *outputURL = [[NSURL alloc] initFileURLWithPath:outputPath];
     NSFileManager *fileManager = [NSFileManager defaultManager];
     if ([fileManager fileExistsAtPath:outputPath]) {
-        NSLog(@"file saved");
+        
     }
     [outputPath release];
     return [outputURL autorelease];
