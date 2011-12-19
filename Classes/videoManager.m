@@ -94,7 +94,7 @@
 {
     NSLog(@"stopRecording");
     self.callBackObject.isRecording = FALSE;
-    [self.callBackObject stopRecording];
+    [[BonjourViewController getRootViewController] stopRecording];
     [captureSession stopRunning];
 }
 

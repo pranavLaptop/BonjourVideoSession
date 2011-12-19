@@ -141,17 +141,24 @@ BonjourViewController *rootViewController=NULL;
     {
       isRecording = TRUE;
       vManager=[[VideoManager alloc] init];
-      vManager.callBackObject = (id*)self;
+      vManager.callBackObject = self;
       [vManager initOverlayView:self.view.frame.size :self.view];
       [vManager initCapture];
     }
-    else if([header isEqualToString:@"stop_recording"] && isRecording)
+    else if([header isEqualToString:@"stop_recording"])
     {
+        NSLog(@"Stopping recording");
         isRecording = FALSE;
         if(vManager != NULL)
         {
+            NSLog(@"vManager not NULL");
             [vManager stopRecording];
         }
+        else
+        {
+            NSLog(@"vManager NULL");
+        }
+        
     }
     
     /*else if([header isEqualToString:@"ping_signal"])
